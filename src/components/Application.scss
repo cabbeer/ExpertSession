@@ -12,7 +12,7 @@
     align-self: center;
   }
 
-  &__separator {
+&__separator {
     width: 90%;
     margin: $spacing 0;
     border: solid 1px;
@@ -36,3 +36,4 @@
   padding: 0 $spacing;
   width: 100%;
 }
+
