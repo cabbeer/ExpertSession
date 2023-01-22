@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const InterviewerList = (props) => {
   const { interviewers, onChange, value } = props;
 
-  const interviewerListItems = interviewers.map((interviewer) => (
+  const singleInterviewer = interviewers.map((interviewer) => (
     <InterviewerListItem 
       key={interviewer.id}
       name={interviewer.name}
@@ -20,7 +20,7 @@ const InterviewerList = (props) => {
   return (
     <section className="interviewers" data-testid="interviewer-list">
       <h4 className="interviewers__header text--light">Interviewer</h4>
-      <ul className="interviewers__list">{interviewerListItems}</ul>
+      <ul className="interviewers__list">{singleInterviewer}</ul>
     </section>
   )
 }
