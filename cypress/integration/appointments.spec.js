@@ -1,6 +1,5 @@
 describe("Appointment", () => {
     beforeEach(() => {
-      // reset DB first
       cy.request("GET", "api/debug/reset");
   
       cy.visit("/");
@@ -9,11 +8,11 @@ describe("Appointment", () => {
   
     it("should book an interview", () => {
       cy.get("[alt=Add]")
-        .first() // 2 buttons exist. Last appointment button is hidden
+        .first() 
         .click();
       
       cy.get("[data-testid=student-name-input]")
-        .type("Lydia Miller-Jones");
+        .type("Jane Doe");
   
       cy.get("[alt='Sylvia Palmer']")
         .click();
@@ -21,7 +20,7 @@ describe("Appointment", () => {
       cy.contains("Save")
         .click();
   
-      cy.contains(".appointment__card--show", "Lydia Miller-Jones");
+      cy.contains(".appointment__card--show", "Jane Doe");
       cy.contains(".appointment__card--show", "Sylvia Palmer");
     });
   
@@ -32,7 +31,7 @@ describe("Appointment", () => {
       
       cy.get("[data-testid=student-name-input]")
         .clear()
-        .type("Lydia Miller-Jones");
+        .type("Jane Doe");
   
       cy.get("[alt='Tori Malcolm']")
         .click();
@@ -40,7 +39,7 @@ describe("Appointment", () => {
       cy.contains("Save")
         .click();
   
-      cy.contains(".appointment__card--show", "Lydia Miller-Jones");
+      cy.contains(".appointment__card--show", "Jane Doe");
       cy.contains(".appointment__card--show", "Tori Malcolm");
     });
   
