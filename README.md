@@ -6,7 +6,7 @@ To get started, please follow these steps:
 
 1. Clone the repository to your local machine: 
 ```
-git clone https://github.com/[username]/interview-scheduler.git
+git clone https://github.com/cabbeer/interview-scheduler.git
 ```
 2. Navigate to the project's root directory: cd interview-scheduler
 3. Install the necessary dependencies: npm install
