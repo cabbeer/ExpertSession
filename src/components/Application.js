@@ -2,16 +2,14 @@ import React from "react";
 import axios from "axios";
 
 import "components/Application.scss";
-
+import Appointment from './Appointment';
+import DayList from './DayList';
 import Button from './Button';
 
-import DayList from './DayList';
-
-import Appointment from './Appointment';
-
-import useApplicationData from '../hooks/useApplicationData'
 
 import { getAppointmentsForDay, getInterview, getInterviewersForDay } from 'helpers/selectors';
+import useApplicationData from '../hooks/useApplicationData'
+
 
 
 export default function Application(props) {
