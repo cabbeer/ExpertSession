@@ -19,17 +19,14 @@ export default function useVisualMode(initial) {
   };
 
   const back = () => {
-    // do not allow user to go back past initial mode
     if (history.length === 1) {
       return;
     }
 
-    setHistory(prevHistory => prevHistory.slice(0, -1));
+    const newHistory = [...history];
+    newHistory.pop();
+    setHistory(newHistory);
   };
 
-  return{ 
-    mode,
-    transition, 
-    back 
-};
+  return{ mode, transition, back, history };
 };
