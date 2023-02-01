@@ -6,9 +6,9 @@ To get started, please follow these steps:
 
 1. Clone the repository to your local machine: 
 ```
-git clone https://github.com/cabbeer/interview-scheduler.git
+git clone https://github.com/cabbeer/ExpertSession
 ```
-2. Navigate to the project's root directory: cd interview-scheduler
+2. Navigate to the project's root directory: cd ExpertSession
 3. Install the necessary dependencies: npm install
 4. Running the Application
 **Once the setup is complete, you can start the application by running the following command:**
