@@ -46,16 +46,22 @@ This will start the webpack development server, and the application will be acce
 
 ### This application includes a test suite built with Jest and Storybook and Cypress. To run the tests, use the following command:
 
-> npm test
+```
+npm test
+```
 
 This will execute all tests and display the results in the console.
 
 ### Storybook
 This application also includes a Storybook visual testbed. You can run Storybook by using the following command:
 
-> npm run storybook
+```
+npm run storybook
+```
 
-This will start a local server, and the Storybook interface will be accessible at http://localhost:6006/.
+This will start a local server, and the Storybook interface will be accessible at: 
+
+> http://localhost:6006/.
 
 
 ## What's Included:
