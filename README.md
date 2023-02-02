@@ -36,7 +36,10 @@ cd [local_directory]/ExpertSession
 ```
 npm install
 ```
-#### 6. Running the Application: **Once the setup is complete, you can start the application by running the following command:**
+#### 6. Running the Application: 
+
+**Once the setup is complete, you can start the application by running the following command:**
+
 ```
 npm start
 ```
